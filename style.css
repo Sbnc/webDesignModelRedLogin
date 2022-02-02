@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p,h1,h2,h3{
+  margin:0;
+  padding:0;
+}
+
+.content{
+  position: absolute;
+  background: linear-gradient(112.27deg, #DC3845 6.5%, #370001 94.27%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 8vw;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -10;
+}
+.header .title{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 54px;
+  line-height: 81px;
+  color: #FFFFFF;
+  animation: textAnimation 3s;
+  position: relative;
+}
+.header .title span{
+  font-weight: bold;
+}
+.header .subTitle{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  animation: textAnimation 2s ;
+  position: relative;
+}
+.form {
+  width: 462px;
+  padding: 63px 80px;
+  border-radius: 4px;
+  border: #fff 1px solid;
+  background: rgba(255, 255, 255, 0.1);
+}
+.form_title{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 54px;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 30px;
+}
+.form_label{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-top: 20px;
+  
+}
+.form input{
+  border: none;
+  align-items: center;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #370001;
+  margin: 5px 0px;
+  width: 100%;
+}
+
+.form_forgot{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: end;
+  cursor: pointer;
+}
+.form_button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  background: #DC3845;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 25px 0px;
+  justify-content: center;
+  align-items: center;
+}
+.form_button:hover{
+  background: #af2a35;
+}
+.form_button p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin: 0px;
+  margin-right: 10px;
+
+}
+.form_button svg{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.form_signup{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+.form_signup span{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.background1{
+  position: fixed;
+  z-index: -1;
+  bottom: -40px;
+  right: -80px;
+}
+.background1 img{
+  width: auto;
+  height: auto;
+  transform: scale(1.4)
+}
+.background2{
+  position: fixed;
+  z-index: -2;
+  top: -40px;
+  left: -80px;
+}
+.background2 img{
+  width: auto;
+  height: auto;
+  transform: scale(1.4)
+}
+
+
+@media only screen and (max-width: 1320px) {
+  .content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+  }
+  .form{
+    margin-top: 50px;
+  }
+}
+
+
+@keyframes textAnimation {
+  from {left: -80px}
+  to {left: 0px}
+}
+
+
+
